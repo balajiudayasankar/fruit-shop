@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Shop</title>
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/9e2213edf0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html" class="logo"><span>F</span>ruit Shop</a>
+    <nav>
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#quantity">Calculate</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+  </header>
+  <!-- home section -->
+   <div class="mar" id="mar">
+    <marquee>
+      <h2>"Fresh from our farms to your table: Discover the finest fruits harvested with care and delivered with love" | "Experience the taste of nature's bounty with our farm-fresh, handpicked fruits"</h2>
+    </marquee>
+   </div>
+  <section class="home" id="home">
+    <div class="container">
+      <h1><span>S</span>harma <span>F</span>arms</h1>
+      <h4>Online platform</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum obcaecati praesentium corporis, sequi necessitatibus, repellat aperiam blanditiis a eveniet earum deserunt enim. Culpa magni assumenda labore, et provident repellat. Ab in distinctio pariatur alias. Enim voluptatum est delectus nostrum magnam temporibus deleniti sed. Eos minus accusamus vero repudiandae minima! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sequi optio quis non! Soluta sint officiis deleniti tempora assumenda, maxime at corporis repellendus architecto? Soluta reiciendis, excepturi quis adipisci id sequi pariatur cumque impedit odio repudiandae beatae consequatur quasi numquam ullam quod nemo asperiores saepe quibusdam cum. Eaque, veritatis provident.</p>    </div>
+    <br>
+      <div class="btn">
+      <a href="#">Read More!</a>
+    </div>
+    <br>
+    <img src="img/mainimage1.jpg" alt="img">
+  </section>
+  <!-- about us -->
+   <section class="about" id="about">
+    <div class="main-txt">
+      <h1>Let me tell about ourselves</h1>
+      <p class="txt">A Hygenic Farm Collections</p>
+    </div>
+    <div class="img-cont">
+      <img src="img/mainimage2.jpg" alt="img">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam nostrum dicta dolores recusandae corrupti neque reiciendis sunt excepturi animi dolorem. Veniam quia, similique assumenda quibusdam exercitationem totam libero, saepe ratione temporibus sit eaque harum placeat itaque consequuntur nobis consequatur aliquid sunt. Quis, earum possimus, animi voluptates, architecto magnam numquam voluptas reprehenderit asperiores excepturi eos perferendis unde. Asperiores, quibusdam ab id, autem enim assumenda dolore quisquam illum necessitatibus, non doloribus similique iusto ipsum magni architecto natus reiciendis dolorem qui illo maxime eligendi cumque voluptatum doloremque! Explicabo laudantium voluptatibus eveniet recusandae a placeat repellat beatae blanditiis veniam, perspiciatis ea quam aliquam temporibus.</p>
+    </div>
+    <div class="btn">
+      <a href="#">Read More!</a>
+    </div>
+   </section>
+  <!-- Quantity Section -->
+  <section class="quantity" id="quantity">
+    <div class="main-txt">
+      <h1 id="two">Ordering Page</h1>
+      <p class="txt" id="one">List of Items</p>
+    </div>
+    <section class="user-input">
+      <div class="user-amount">
+        <h1>Submit Your Amount:</h1>
+        <div class="amount">
+          <input id="userAmount" class="user-Amount" type="text" />
+          <button onclick="submitAmount()">Submit</button>
+        </div>
+        <p>Your Amount Rs: <span id="amountEntered">0</span></p>
+      </div>
+    </section>
+<!-- products section -->
+    <section class="products">
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Apple.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Apple</a></h2>
+          <p id="applePrice">Rs: 10</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('apple' , 'applePrice')">+</button>
+            <input type="text" id="apple" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('apple' , 'applePrice')">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Orange.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Orange</a></h2>
+          <p id="orangePrice">Rs: 20</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('orange' , 'orangePrice')">+</button>
+            <input type="text" id="orange" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('orange' , 'orangePrice')">-</button>
+          </div>          
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Mango.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Mango</a></h2>
+          <p id="mangoPrice">Rs: 30</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('mango' , 'mangoPrice')">+</button>
+            <input type="text" id="mango" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('mango' , 'mangoPrice')">-</button>
+          </div>          
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Grapes.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Grapes</a></h2>
+          <p id="grapePrice">Rs: 10</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('grape' , 'grapePrice')">+</button>
+            <input type="text" id="grape" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('grape' , 'grapePrice')">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Guva.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Guva</a></h2>
+          <p id="guvaPrice">Rs: 20</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('guva' , 'guvaPrice')">+</button>
+            <input type="text" id="guva" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('guva' , 'guvaPrice')">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Kiwi.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Kiwi</a></h2>
+          <p id="kiwiPrice">Rs: 30</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('kiwi' , 'kiwiPrice')">+</button>
+            <input type="text" id="kiwi" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('kiwi' , 'kiwiPrice')">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Papaya.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Papaya</a></h2>
+          <p id="papayaPrice">Rs: 10</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('papaya' , 'papayaPrice')">+</button>
+            <input type="text" id="papaya" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('papaya' , 'papayaPrice')">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="product-img">
+          <img src="img/Pineapple.jpg" alt="apple" />
+        </div>
+        <div class="product-description">
+          <h2 class="product-name"><a href="#">Pineapple</a></h2>
+          <p id="pinePrice">Rs: 20</p>
+          <div class="buttons">
+            <button class="btn-plus" onclick="increaseItem('pine' , 'pinePrice')">+</button>
+            <input type="text" id="pine" value="0" />
+            <button class="btn-minus" onclick="decreaseItem('pine' , 'pinePrice')">-</button>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Calculation -->
+    <div class="amount-details">
+      <h3>Your Total: Rs <span id="userTotalAmount">0</span></h3>
+      <h3>No: Of Items: <span id="numOfItem">0</span></h3>
+      <h3>Your Balance: Rs <span id="balance">0</span></h3>
+    </div>
+  </section>
+  <!-- contact page -->
+  <section class="contact" id="contact">
+    <div class="main-txt">
+      <h1>If any queries</h1>
+      <p class="txt" id="one">Contact us</p>
+    </div>
+    <div class="con">
+      <img src="img/contactus.png" alt="contact pic" class="five">
+      <form>
+        <table>
+          <tr>
+            <td><label>Enter your Name:</label></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Enter your E-mail:</label></td><td><input type="email"></td>
+          </tr>
+          <tr>
+            <td><label>Enter your Contact Info:</label></td><td><input type="tel"></td>
+          </tr>
+          <tr>
+            <td><label>Enter your Address:</label></td><td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><label>Select your State:</label></td><td><select><option>Tamilnadu</option><option>Gujarat</option><option>Rajasthan</option><option>Andhra</option></select></td>
+          </tr>
+          <tr>
+            <td><label>Enter your Queries:</label></td><td><textarea rows="10" cols="30"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class="btn-box formBtn">
+              <button class="btn" type="submit">Send Message</button>
+          </div></td><td></td>
+          </tr>
+        </table>
+      </div>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>Copyright &copy; 2024 by Balaji || All Right Reserved.</p>
+  </footer>
+    <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
