@@ -12,3 +12,11 @@ Welcome to the Fruit Shop project! This is a web-based application designed to m
 ## Technologies Used
 
 Frontend: HTML, CSS, JavaScript
+
+## Usage
+Once the server is running, you can:
+
+- View: Access the fruit list through the homepage.
+- Add: Use the form to add new fruits.
+- Delete: Remove fruits by selecting them from the list.
+- Edit: Update fruit details as needed.
